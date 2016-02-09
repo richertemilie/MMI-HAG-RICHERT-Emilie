@@ -1,0 +1,96 @@
+/*---GLOBAL---*/
+
+body{
+    font-family: helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*---WRAPPER---*/
+
+.wrapper{
+    width: 1000px;
+    margin: auto;
+}
+
+/*---HEADER---*/
+
+header{
+    background-color: #242424;
+    overflow: hidden; /* pour pas que les éléments débordent */
+}
+
+.logo{
+    color: #57c5a0;
+    font-size: 2em;
+    font-weight: 600;
+    float: left;
+    padding: 10px;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+.header-search{
+    border-right: 2px solid #7e7e7e;
+    padding: 20px;
+    color:#7e7e7e;
+}
+
+/*---MENU---*/
+
+.barreMenu{
+    background-color: white;
+    overflow: hidden;
+}
+
+.barreMenu nav ul li{
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+    padding: 1em;
+    border-left: 1px solid #7e7e7e;
+}
+
+.barreMenu nav ul li a{
+    color: black;
+}
+
+.menu-contact{
+    border-right: 1px solid #7e7e7e;
+}
+
+
+.menu{
+    float: left;
+}
+
+.shop{
+    float: right;
+}
+
+
+
+
+.grey-small-icone{
+    background-color: #adadad;
+    text-align: center;
+    border-radius: 4px;
+    padding:0.25em;
+}
+
+.blue-small-icone{
+    background-color: #57c5a0;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.25em;
+}
+
+/*---BANNER---*/
