@@ -1,4 +1,6 @@
-/*---GLOBAL---*/
+/*--------------- GLOBAL -----------------*/
+
+
 
 body{
     font-family: helvetica, sans-serif;
@@ -8,14 +10,22 @@ a{
     text-decoration: none;
 }
 
-/*---WRAPPER---*/
-
-.wrapper{
-    width: 1000px;
-    margin: auto;
+i, .button, .flickr-img img, .back-top img:hover{
+    cursor: pointer;
 }
 
-/*---HEADER---*/
+
+/*--------------- WRAPPER ----------------*/
+
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*---------------- HEADER -----------------*/
+
 
 header{
     background-color: #242424;
@@ -23,7 +33,7 @@ header{
 }
 
 .logo{
-    color: #57c5a0;
+    color: #57C5A0;
     font-size: 2em;
     font-weight: 600;
     float: left;
@@ -44,7 +54,10 @@ header nav ul li{
     color:#7e7e7e;
 }
 
-/*---MENU---*/
+
+
+/*------------------ MENU ------------------*/
+
 
 .barreMenu{
     background-color: white;
@@ -63,6 +76,10 @@ header nav ul li{
     color: black;
 }
 
+.barreMenu nav ul li a:hover{
+    color: #57C5A0;
+}
+
 .menu-contact{
     border-right: 1px solid #7e7e7e;
 }
@@ -76,21 +93,533 @@ header nav ul li{
     float: right;
 }
 
-
-
-
-.grey-small-icone{
-    background-color: #adadad;
+.shop ul li span.grey-small-icone{
+    background-color: #999999;
     text-align: center;
     border-radius: 4px;
     padding:0.25em;
 }
 
-.blue-small-icone{
-    background-color: #57c5a0;
-    text-align: center;
-    border-radius: 4px;
-    padding: 0.25em;
+.shop ul li span{
+	background-color: #57C5A0;
+	padding:5px 8px;
+	border-radius:4px;
+    margin-left: 10px;
 }
 
-/*---BANNER---*/
+
+
+
+
+/*---------------- BANNER ------------------*/
+
+
+
+.text-slide {
+	position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.price{
+	background: #57C5A0;
+	color: #ffffff;
+	padding: 20px 7px 20px 7px;
+	display: inline-block;
+	line-height: 1.8em;
+}
+
+.text-slide h3{
+	padding: 10px 0 0;
+	font-size: 2.5em;
+	line-height: 1.2em;
+	color: #242424;
+}
+
+.text-slide p{
+	padding: 2% 0 2% 0;
+	font-size: 1.2em;
+	line-height:1.5em;
+    width: 47%;
+}
+
+.icons li{
+    display: inline-block;
+	background: #ffffff;
+    padding: 1%;
+    color: #000;
+    
+}
+
+.icons li:hover{
+    color: #57C5A0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*--------------------- SOUS SLIDER ----------------------*/
+
+.sous-slide{
+    background-color: #2e2e2e;
+    padding-left: 2%;
+}
+
+.sous-slide article{
+    float: left;
+    width: 19%;
+    padding-top: 0.5%;
+}
+
+.sous-slide article:hover{
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    line-height: 1.5em;
+    padding: 2%;
+    color: #999999;
+    font-size: 1.4em;
+}
+
+.sous-slide p{
+    text-align: center;
+    color: #999999;
+    font-size: 0.9em;
+}
+
+.sous-slide-txt{
+    padding: 3% 0 8% 0;
+}
+
+.barreHover{
+    background-color: #000000;
+    height: 10px;
+    border-right: 2px #2e2e2e solid;
+}
+
+.sous-slide-txt:hover > .title{
+    color: #ffffff;
+}
+
+.sous-slide article:hover > .barreHover{
+    background-color: #57C5A0;
+}
+
+
+
+
+
+
+
+/*--------------- SECTION OFFRES CHAUSSURES ---------------*/
+
+
+.clear {
+	clear: both;
+}
+
+.offer{
+    background-color: #242424;
+    overflow: hidden;
+}
+.shoesBlock{
+    padding: 4% 4% 2%;
+}
+.shoesBlock{
+	float: left;
+	width: 25%;
+	text-align:center;
+}
+.shoesBlock:first-child{
+	margin-left: 0;
+}
+.shoesBlock img{
+	width: 100%;
+}
+.shoesBlock span{
+	position: relative;
+	top: -100px;
+}
+.shoesBlock span.tag{
+	padding: 15px 30px;
+	background-color: rgba(36, 36, 36, 0.85);
+	color: #ffffff;
+	font-size: 1.5em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.shoesBlock span.tag:hover{
+	background-color: rgba(0, 0, 0, 0.61);
+}
+
+
+
+
+/*---------------- GRILLE ACHATS CHAUSSURES ---------------*/
+
+
+.grille{
+	background: #EBE7DF;
+    padding: 4%;
+}
+
+.grille_top{
+	padding: 0 0 8% 0;
+}
+
+.grille_top:first-child{
+	margin-top: 0;
+}
+
+.grille_top h3{
+	float: left;
+	color: #242424;
+	font-size: 1.5em;
+	text-shadow: 0 1px 0 #ffffff;
+	line-height: 1.8em;
+}
+
+.button p{
+	font-size: 1em;
+	float: right;
+	text-transform: capitalize;
+	padding: 8px 20px;
+	color: #BCB4A7;
+	border: 1px solid #BCB4A7;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.button p:hover{
+	background: #BCB4A7;
+	color: #fff;
+}
+
+.grille-global{
+	text-align: center;
+	display: block;
+    margin-bottom: 4%;
+}
+
+.grille-global article{
+	float: left;
+	width: 30%;
+	margin-left: 5%;
+	background: #ffffff;
+	position: relative;
+}
+
+.grille-global article:first-child{
+	margin-left: 0;
+}
+
+.grille-global article a{
+	display: block;
+    color: #999999;
+}
+
+.grille-global article h4{
+    color: #000000;
+    border-top: 1px #999999 solid;
+    padding: 5%;
+}
+
+.grille-global .icons{
+    color: #000000;
+    border-top: 1px #999999 solid;
+    padding: 3.9%;
+}
+
+
+.grille-global article a:hover{
+	color: #57C5A0;
+}
+
+.grille-global article img{
+	padding: 8% 0;
+}
+
+.grille-global article h3{
+	border-top: 1px solid #EBEBEB;
+	padding: 15px;
+	font-size: 1.2em;
+	color: #000000;
+	font-weight: 600;
+	text-shadow: 0 1px 0 #ffffff;
+}
+
+.prix-shoes{
+	background: #57C5A0;
+	color: #ffffff;
+	font-size: 0.8em;
+	padding: 25px 12px;
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+}
+
+.on-sale{
+	background: #242424;
+    font-size: 0.8em;
+	color: #ffffff;
+	padding: 25px 15px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+
+.out-of-stock{
+	background: #F27E4B;
+	width: 60px;
+    font-size: 0.8em;
+	color: #ffffff;
+	padding: 25px 15px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+
+
+
+
+/*------------- SHIPPING ET TESTIMONIALS --------------*/
+
+
+.ship-test-global{
+	float:left;
+	width: 45%;
+    padding: 3% 0 0 0;
+}
+.ship-test-global:first-child{
+	margin-left: 0;
+}
+
+.ship-test-global h4, .blog-news-global h4{
+	font-size: 1.1em;
+	color: #141414;
+	font-weight: 600;
+	text-shadow: 0 1px 0 #ffffff;
+	margin-bottom: 4%;
+}
+
+.ship-test{
+	float: left;
+	width: 30%;
+	margin-left: 6%;
+	background: #DFDBD4;
+	padding: 7%;
+}
+.ship-test:first-child{
+	margin-left: 0;
+}
+
+.blog-news-global{
+	background: #DFDBD4;
+	padding: 3.3%;
+    float:left;
+	width: 43%;
+	margin: 3% 0 0 5.3%;
+}
+
+
+
+/*-------- PARTIE BLOG ----------*/
+
+
+.blog-news{
+	margin-top: 4%;
+}
+
+.blog-news:first-child{
+	margin-top: 0;
+}
+
+.blue-square{
+	float:left;
+	width:10%;
+}
+
+.blue-square p{
+	font-size: 0.8925em;
+	margin-top: 4px;
+	background:#57C5A0;
+	padding: 15px;
+	color: #ffffff;
+}
+
+.blog-text{
+	float: left;
+	width: 86%;
+	margin-left: 3%;
+}
+
+.blog-news-global h5{
+	font-size: 1em;
+	color: #141414;
+	font-weight: 600;
+	text-shadow: 0 1px 0 #ffffff;
+	margin-bottom: 2%;
+}
+
+
+
+
+
+/*------------ WIDGET FLICKR ------------*/
+
+
+
+.flickr-global{
+	display: block;
+    padding: 0 0 0 3%;
+}
+
+.text-widget{
+	float: left;
+	width: 30%;
+	margin-left: 3%;
+    padding-bottom: 3%;
+}
+
+.text-widget:first-child{
+	margin-left: 0;
+}
+
+.flickr-global h5{
+	font-size: 1.2em;
+	color: #5e5e5e;
+	margin-bottom: 6%;
+}
+
+.text-widget p{
+	font-size: 0.8em;
+    font-weight: 600;
+	color: #9B9B9B;
+	line-height: 1.8em;
+	font-style: italic;
+}
+
+.text-widget p.top{
+	margin-top: 2%;
+}
+
+.text-widget p a{
+	color: #57C5A0;
+}
+
+.flickr-img li{
+	float: left;
+	width: 29%;
+    margin: 0 -10px 10px 0;
+}
+
+
+
+
+/*-------------- RESEAUX SOCIAUX ET RECHERCHE FOOTER --------------*/
+
+.bottom{
+	background: #242424;
+    padding: 3% 0 3% 0;
+}
+
+.footer-milieu{
+    border-top: 1px solid black;
+    padding: 0 0 0 3%;
+}
+
+.footer-search{
+	float: left;
+	position: relative;
+	width: 23%;
+    padding-top: 3%;
+}
+
+.footer-search form input[type="email"]{
+	font-style: italic;
+	font-size:0.8em;
+	line-height: 25px;
+	width: 77%;
+	padding: 10px;
+	background: #2e2e2e;
+	color: #9B9B9B;
+	border: none;
+	outline: none;
+}
+
+.footer-search form input[type="submit"]{
+	cursor:pointer;
+	line-height: 25px;
+	position: absolute;
+	right: 0;
+	background: #3d3d3d;
+	padding: 10px;
+	width: 16%;
+	border: none;
+	outline: none;
+}
+
+/*----------- RESEAUX SOCIAUX -----------*/
+
+.socials-medias {
+	float: right;
+	margin-right: 3.5%;
+    padding-top: 3%;
+}
+
+.socials-medias ul li{
+	float: left;
+	margin-left: 10px;
+    background-color: #2e2e2e;
+    padding: 3.5%;
+    color: #7D7D7D;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------- MENU FOOTER --------------*/
+
+
+footer{
+	overflow: hidden;
+    background: #2e2e2e;
+	padding: 3% 1% 1% 3%;
+    color: #7D7D7D;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.menu-footer{
+	float: right;
+	width: 40%;
+}
+
+.back-top{
+    float: right;
+    padding: 5% 0% 0% 20%;
+}
+
+.menu-footer nav ul li{
+    display: inline-block;
+}
+
+.copyright{
+	float: left;
+}
