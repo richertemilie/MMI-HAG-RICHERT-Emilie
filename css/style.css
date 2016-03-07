@@ -1,22 +1,32 @@
 /*--------------- GLOBAL -----------------*/
 
-
-
 body{
     font-family: helvetica, sans-serif;
 }
 
 a{
     text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    color: #57C5A0;
+}
+
+li{
+    display: inline-block;
 }
 
 i, .button, .flickr-img img, .back-top img:hover{
     cursor: pointer;
 }
 
+.clearfix{
+	clear: both; /* pour stopper le flottement des éléments */
+}
+
 
 /*--------------- WRAPPER ----------------*/
-
 
 .wrapper{
     width: 80%;
@@ -26,26 +36,20 @@ i, .button, .flickr-img img, .back-top img:hover{
 
 /*---------------- HEADER -----------------*/
 
-
 header{
     background-color: #242424;
-    overflow: hidden; /* pour pas que les éléments débordent */
+    overflow: hidden; /* pour que les éléments ne débordent pas */
 }
 
 .logo{
     color: #57C5A0;
     font-size: 2em;
-    font-weight: 600;
     float: left;
-    padding: 10px;
+    padding-top: 12px;
 }
 
 header nav{
     float: right;
-}
-
-header nav ul li{
-    display: inline-block;
 }
 
 .header-search{
@@ -55,9 +59,7 @@ header nav ul li{
 }
 
 
-
 /*------------------ MENU ------------------*/
-
 
 .barreMenu{
     background-color: white;
@@ -65,7 +67,6 @@ header nav ul li{
 }
 
 .barreMenu nav ul li{
-    display: inline-block;
     color: black;
     font-weight: 700;
     padding: 1em;
@@ -83,7 +84,6 @@ header nav ul li{
 .menu-contact{
     border-right: 1px solid #7e7e7e;
 }
-
 
 .menu{
     float: left;
@@ -108,12 +108,7 @@ header nav ul li{
 }
 
 
-
-
-
 /*---------------- BANNER ------------------*/
-
-
 
 .text-slide {
 	position: absolute;
@@ -124,42 +119,35 @@ header nav ul li{
 .price{
 	background: #57C5A0;
 	color: #ffffff;
-	padding: 20px 7px 20px 7px;
+    line-height: 1.8em;
 	display: inline-block;
-	line-height: 1.8em;
+    padding: 20px 7px 20px 7px;
 }
 
 .text-slide h3{
-	padding: 10px 0 0;
-	font-size: 2.5em;
+    color: #242424;
+    font-size: 2.5em;
 	line-height: 1.2em;
-	color: #242424;
+	padding: 10px 0 0;
 }
 
 .text-slide p{
-	padding: 2% 0 2% 0;
-	font-size: 1.2em;
-	line-height:1.5em;
     width: 47%;
+    font-size: 1.2em;
+	line-height:1.5em;
+	padding: 2% 0 2% 0;
 }
 
 .icons li{
-    display: inline-block;
-	background: #ffffff;
-    padding: 1%;
+    background: #ffffff;
     color: #000;
-    
+    padding: 1%;
 }
 
 .icons li:hover{
     color: #57C5A0;
     cursor: pointer;
 }
-
-
-
-
-
 
 
 /*--------------------- SOUS SLIDER ----------------------*/
@@ -170,8 +158,8 @@ header nav ul li{
 }
 
 .sous-slide article{
-    float: left;
     width: 19%;
+    float: left;    
     padding-top: 0.5%;
 }
 
@@ -182,9 +170,9 @@ header nav ul li{
 .title{
     text-align: center;
     line-height: 1.5em;
-    padding: 2%;
     color: #999999;
     font-size: 1.4em;
+    padding: 2%;
 }
 
 .sous-slide p{
@@ -198,8 +186,8 @@ header nav ul li{
 }
 
 .barreHover{
-    background-color: #000000;
     height: 10px;
+    background-color: #000000;
     border-right: 2px #2e2e2e solid;
 }
 
@@ -212,59 +200,42 @@ header nav ul li{
 }
 
 
-
-
-
-
-
 /*--------------- SECTION OFFRES CHAUSSURES ---------------*/
 
-
-.clear {
-	clear: both;
-}
-
 .offer{
-    background-color: #242424;
     overflow: hidden;
+    background-color: #242424;
 }
+
 .shoesBlock{
+    width: 25%;
+	float: left;
+	text-align:center;
     padding: 4% 4% 2%;
 }
-.shoesBlock{
-	float: left;
-	width: 25%;
-	text-align:center;
-}
+
 .shoesBlock:first-child{
 	margin-left: 0;
 }
+
 .shoesBlock img{
 	width: 100%;
 }
+
 .shoesBlock span{
 	position: relative;
 	top: -100px;
 }
-.shoesBlock span.tag{
-	padding: 15px 30px;
-	background-color: rgba(36, 36, 36, 0.85);
+
+.shoesBlock span.fonduNoir{
+	background-color: rgba(36, 36, 36, 0.8);
+    font-size: 1.5em;
 	color: #ffffff;
-	font-size: 1.5em;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+    padding: 15px 30px;
 }
-.shoesBlock span.tag:hover{
-	background-color: rgba(0, 0, 0, 0.61);
-}
-
-
 
 
 /*---------------- GRILLE ACHATS CHAUSSURES ---------------*/
-
 
 .grille{
 	background: #EBE7DF;
@@ -281,42 +252,31 @@ header nav ul li{
 
 .grille_top h3{
 	float: left;
-	color: #242424;
+    line-height: 1.8em;
 	font-size: 1.5em;
-	text-shadow: 0 1px 0 #ffffff;
-	line-height: 1.8em;
+    color: #242424;
 }
 
 .button p{
+    float: right;
 	font-size: 1em;
-	float: right;
-	text-transform: capitalize;
-	padding: 8px 20px;
-	color: #BCB4A7;
+	color: #BCB4A7;	
 	border: 1px solid #BCB4A7;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-.button p:hover{
-	background: #BCB4A7;
-	color: #fff;
+    padding: 8px 20px;
 }
 
 .grille-global{
+    display: block;
 	text-align: center;
-	display: block;
     margin-bottom: 4%;
 }
 
 .grille-global article{
+    position: relative;
 	float: left;
+    background: #ffffff;
 	width: 30%;
-	margin-left: 5%;
-	background: #ffffff;
-	position: relative;
+	margin-left: 5%;	
 }
 
 .grille-global article:first-child{
@@ -329,15 +289,15 @@ header nav ul li{
 }
 
 .grille-global article h4{
-    color: #000000;
     border-top: 1px #999999 solid;
+    color: #000000;
     padding: 5%;
 }
 
 .grille-global .icons{
-    color: #000000;
     border-top: 1px #999999 solid;
-    padding: 3.9%;
+    color: #000000;
+    padding: 4%;
 }
 
 
@@ -346,95 +306,117 @@ header nav ul li{
 }
 
 .grille-global article img{
-	padding: 8% 0;
+	padding: 8% 0 0 0;
 }
 
 .grille-global article h3{
-	border-top: 1px solid #EBEBEB;
-	padding: 15px;
-	font-size: 1.2em;
+    font-size: 1.2em;
+    font-weight: 600;
 	color: #000000;
-	font-weight: 600;
-	text-shadow: 0 1px 0 #ffffff;
+    padding: 15px;
+	border-top: 1px solid #EBEBEB;	
 }
 
 .prix-shoes{
+    position: absolute;
+    width: 45px;
 	background: #57C5A0;
+    font-size: 0.8em;
 	color: #ffffff;
-	font-size: 0.8em;
-	padding: 25px 12px;
-	position: absolute;
-	bottom: 0px;
-	left: 10px;
+    bottom: 0px;
+	left: 15px;
+	padding: 30px 15px;
 }
 
 .on-sale{
+    position: absolute;
+    width: 62px;
 	background: #242424;
     font-size: 0.8em;
 	color: #ffffff;
-	padding: 25px 15px;
-	position: absolute;
-	top: 0px;
-	right: 10px;
+    top: 0px;
+	right: 15px;
+	padding: 32px 10px;
 }
 
 .out-of-stock{
+    position: absolute;
+    width: 60px;
 	background: #F27E4B;
-	width: 60px;
     font-size: 0.8em;
 	color: #ffffff;
-	padding: 25px 15px;
-	position: absolute;
 	top: 0px;
-	right: 10px;
+	right: 15px;
+    padding: 25px 10px;
 }
 
 
+/*----- ANIMATION ICONS DE LA GRILLE ACHATS CHAUSSURES -----*/
+
+.mainContainer{
+    height: 55px;
+    overflow: hidden;
+    cursor: default;
+    -webkit-user-select: none;
+}
+
+.firstChild {
+    height: 50px;
+    line-height: 20px;
+    text-align: center;
+    color: deepskyblue;
+}
+
+.secondChild {
+    height: 50px;
+    width: 40%;
+    line-height: 55px;
+    color: aliceblue;
+    top:0;
+    background-color: white;
+    float: left;
+    margin: 2% 0 0 30%;
+}
+
+.mainContainer:hover > .secondChild {
+    position: relative;
+    top: -55px;
+}
 
 
 /*------------- SHIPPING ET TESTIMONIALS --------------*/
-
 
 .ship-test-global{
 	float:left;
 	width: 45%;
     padding: 3% 0 0 0;
 }
+
 .ship-test-global:first-child{
 	margin-left: 0;
 }
 
 .ship-test-global h4, .blog-news-global h4{
-	font-size: 1.1em;
 	color: #141414;
+    font-size: 1em;
 	font-weight: 600;
-	text-shadow: 0 1px 0 #ffffff;
 	margin-bottom: 4%;
 }
 
 .ship-test{
 	float: left;
-	width: 30%;
-	margin-left: 6%;
-	background: #DFDBD4;
-	padding: 7%;
+    background: #DFDBD4;
+	width: 33%;
+	padding: 6%;
+    margin-left: 10%;
 }
+
 .ship-test:first-child{
 	margin-left: 0;
 }
 
-.blog-news-global{
-	background: #DFDBD4;
-	padding: 3.3%;
-    float:left;
-	width: 43%;
-	margin: 3% 0 0 5.3%;
-}
-
-
 
 /*-------- PARTIE BLOG ----------*/
-
 
 .blog-news{
 	margin-top: 4%;
@@ -444,55 +426,46 @@ header nav ul li{
 	margin-top: 0;
 }
 
-.blue-square{
-	float:left;
-	width:10%;
-}
-
-.blue-square p{
-	font-size: 0.8925em;
-	margin-top: 4px;
-	background:#57C5A0;
-	padding: 15px;
-	color: #ffffff;
-}
-
 .blog-text{
+    width: 87%;
 	float: left;
-	width: 86%;
 	margin-left: 3%;
 }
 
+.blog-news-global{
+    float:left;
+    width: 46%;
+	background: #DFDBD4;
+    margin: 3% 0 0 4.5%;
+	padding: 2.2%;
+}
+
 .blog-news-global h5{
-	font-size: 1em;
+	font-size: 0.9em;
+    font-weight: 600;
 	color: #141414;
-	font-weight: 600;
-	text-shadow: 0 1px 0 #ffffff;
 	margin-bottom: 2%;
 }
 
+.blue-square p{
+    background: #57C5A0;
+	font-size: 0.8em;
+    color: #ffffff;
+    padding: 15px;
+	margin-top: 4px;
+}
 
-
+.blue-square{
+    width: 10%;
+	float: left;
+}
 
 
 /*------------ WIDGET FLICKR ------------*/
 
-
-
 .flickr-global{
 	display: block;
     padding: 0 0 0 3%;
-}
-
-.text-widget{
-	float: left;
-	width: 30%;
-	margin-left: 3%;
-    padding-bottom: 3%;
-}
-
-.text-widget:first-child{
-	margin-left: 0;
 }
 
 .flickr-global h5{
@@ -501,12 +474,23 @@ header nav ul li{
 	margin-bottom: 6%;
 }
 
+.text-widget{
+	float: left;
+	width: 30%;
+    padding-bottom: 3%;
+	margin-left: 3%; 
+}
+
+.text-widget:first-child{
+	margin-left: 0;
+}
+
 .text-widget p{
 	font-size: 0.8em;
+    font-style: italic;
+    color: #9B9B9B;
     font-weight: 600;
-	color: #9B9B9B;
 	line-height: 1.8em;
-	font-style: italic;
 }
 
 .text-widget p.top{
@@ -524,8 +508,6 @@ header nav ul li{
 }
 
 
-
-
 /*-------------- RESEAUX SOCIAUX ET RECHERCHE FOOTER --------------*/
 
 .bottom{
@@ -534,92 +516,103 @@ header nav ul li{
 }
 
 .footer-milieu{
-    border-top: 1px solid black;
     padding: 0 0 0 3%;
+    border-top: 1px solid black;
 }
 
 .footer-search{
-	float: left;
-	position: relative;
-	width: 23%;
+    position: relative;
+    width: 23%;
+    float: left;
     padding-top: 3%;
 }
 
 .footer-search form input[type="email"]{
-	font-style: italic;
-	font-size:0.8em;
-	line-height: 25px;
 	width: 77%;
-	padding: 10px;
-	background: #2e2e2e;
-	color: #9B9B9B;
+    background: #2e2e2e;
+    color: #9B9B9B;
+    line-height: 25px;
+    font-style: italic;
+	font-size: 0.8em;
+	padding: 9px;
 	border: none;
-	outline: none;
+	outline: none;     /* enlève les bordures par défaut */
 }
 
 .footer-search form input[type="submit"]{
-	cursor:pointer;
+    position: absolute;
+    width: 16%;
+    background: #9B9B9B;
 	line-height: 25px;
-	position: absolute;
+    font-weight: 600;
+	padding: 9px;
 	right: 0;
-	background: #3d3d3d;
-	padding: 10px;
-	width: 16%;
 	border: none;
 	outline: none;
+    cursor: pointer;
 }
+
 
 /*----------- RESEAUX SOCIAUX -----------*/
 
 .socials-medias {
 	float: right;
-	margin-right: 3.5%;
     padding-top: 3%;
+	margin-right: 3.5%;
 }
 
 .socials-medias ul li{
 	float: left;
-	margin-left: 10px;
     background-color: #2e2e2e;
-    padding: 3.5%;
     color: #7D7D7D;
+	margin-left: 10px;
+    padding: 3.5%;
 }
-
-
-
-
-
-
-
-
 
 
 /*-------------- MENU FOOTER --------------*/
 
-
 footer{
 	overflow: hidden;
     background: #2e2e2e;
-	padding: 3% 1% 1% 3%;
-    color: #7D7D7D;
-	font-size: 1em;
+    font-size: 1em;
 	font-weight: 600;
+    color: #7D7D7D;
+	padding: 3% 1% 1% 3%;
 }
 
 .menu-footer{
+    width: 40%;
 	float: right;
-	width: 40%;
 }
 
 .back-top{
     float: right;
-    padding: 5% 0% 0% 20%;
-}
-
-.menu-footer nav ul li{
-    display: inline-block;
 }
 
 .copyright{
 	float: left;
+}
+
+
+/*-------------- FLEXBOX DU FOOTER --------------*/
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.copyright, .menu-footer{
+    margin: 1em;
+    flex-grow: 1;
+}
+
+.copyright{
+    padding: 1em;
+}
+
+.menu-footer{
+    padding: 1em 1em 1em 16em;
 }
